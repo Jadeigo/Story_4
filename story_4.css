@@ -48,6 +48,7 @@ header a {
   background-attachment: fixed;
   padding-bottom: 50vh;
 }
+
 #introduction {
   background-image: url("https://images.unsplash.com/photo-1675337330731-7329d715137f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-attachment: fixed;
@@ -56,6 +57,13 @@ header a {
   background-position: center center;
 }
 
+#fakta {
+    background-image: url("https://syriadirect.org/wp-content/uploads/2023/03/St.-Marys-Church-in-Tal-Nasri-an-Assyrian-village-in-Syrias-northeastern-Hasakah-province-destroyed-by-Islamic-State-IS-fighters-in-2015-222023-Lyse-MauvaisSyria-Direct.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 .textSection {
   max-width: 50rem;
   margin: 0 auto;
@@ -86,3 +94,35 @@ h2 {
   text-align: center;
 }
 /*Maps*/
+
+.alignRight {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.redBg {
+    background: #b61010;
+    color: #fff;
+}
+.greenBg {
+    background: #588002;
+    color: #fff;
+}
+.big {
+    text-align: center;
+    font-size: 4rem;
+    display: block;
+    clear: both;
+}
+.small {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: block;
+}

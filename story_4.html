@@ -35,10 +35,6 @@
           kirken med familien. Faren til Gerges jobba som mekaniker i Syria og
           de hadde et fint liv sammen.
         </p>
-        <p>
-          Ifølge Aid to the church så er det estimert at kristne i Syria har
-          redusert fra 1,5 millioner til bare 300 tusen fra 2011 til 2022.
-        </p>
       </div>
       <div class="scrollText" id="warStart">
         <p>
@@ -101,7 +97,59 @@
           veldig redd, får å ikke drukne. Der var de i noen måneder før de tokk
           fly til Norge.
         </p>
-      </div>
+      </div><div class="scrollText" id="høneffoss">
+        <p>
+            Når de kom til Norge ble de sendt til en asyl motakk først i Oslo og så til Hønefoss. 
+            Gerges og hans familie var i Hønefoss i 5 måneder, også ble de sendt til Tønnsberg. 
+            Han forteller at Gerges og familien følte seg sikkre her i Norge og at de fluktet døden. 
+            Han begynnte med Norsk opplæring i Tønnsberg i noen måneder så ble de sendt tilbake til Oslo og ble der i to år. 
+            I Oslo så fullførte han norsk opplæring så startet han i åttende klasse på brannfjell skole. 
+            Ett år senere så flyttet Gerges og hans familie til Fredrikstad for å være nærmere mormor som hadde rømt Syria før dem og andre familie medlemmer.
+        </p>
+    </div>
+    <div class="scrollText" id="hiøf">
+        <p>
+            Nå i 2023 så bor Gerges sammen med familien hans forsatt i Fredrikstad der han går siste året på bachelorstudiemet sit der han studerer informasjonssystemer ved Høgskolen i Østfold 
+            og er veldig glad over att han og familien er sikkre her og kan gå til skolen og kirken uten å være redd at det finnes en sjanse at han kan bli drept.
+        </p>
+    </div>
+    </section>
+
+    <section id="fakta" class="scrollContainer">
+        <h2>Fakta om Kristne i Syria</h2>
+        <div id="beforeConflict" class="scrollText">
+            <h2>Før konflikten (før 2011):</h2>
+            <aside class="alignRight">
+                <div class="circle greenBg">
+                    <span class="big">10%</span>
+                    <span class="small">Kristne</span>
+                </div>
+            </aside>
+            <p>Før utbruddet av den syriskeborgerkrigen var Syria et land preget av religiøs og etnisk mangfold. 
+                Kristne utgjorde omtrent 10% av befolkningen og tilhørte forskjellige kirkesamfunn, inkludert den ortodokse, den katolske og protestantiske kirken. 
+                De kristne hadde historisk sett en tilstedeværelse i ulike samfunnssektorer, inkludert næringsliv, utdanning og politikk.
+            </p>
+        </div>
+        <div id="afterConflict" class="scrollText">
+            <h2>Etter konflikten (2017)</h2>
+            <aside class="alighRight">
+                <div class="circle redBg">
+                    <span class="big"></span>
+                    <span class="small"></span>
+                </div>
+            </aside>
+            <p>
+                Ifølge Aid to the church så er det estimert at kristne i Syria har redusert fra 1,5 millioner til bare 300 tusen fra 2011 til 2022.
+            </p>
+            <p>
+                Etter at internasjonale koalisjonsstyrker og lokale grupper bekjempet ISIS og frigjorde områder fra deres kontroll, sto kristne overfor utfordringer 
+                med å gjenoppbygge og vende tilbake til sine hjem. Mange kristne samfunn hadde blitt desimert, og gjenoppbyggingsprosessen ble komplisert av økonomiske vanskeligheter, 
+                manglende sikkerhet og en generell følelse av usikkerhet. Generelle utfordringer: I tillegg til de direkte virkningene av konflikten og ISIS' herjinger, 
+                har kristne i Syria stått overfor generelle utfordringer som har påvirket hele befolkningen. Dette inkluderer økonomisk nedgang, mangel på grunnleggende ressurser 
+                som mat og medisiner, samt vanskeligheter med å få tilgang til utdanning og helsehjelp. Mange kristne har også blitt internflyktninger, tvunget til å forlate hjemmene 
+                sine for å finne tryggere områder innenlands.
+            </p>
+        </div>
     </section>
     <h2>Reisen til Gerges fra Syria til Norge</h2>
     <!-- DIV FOR DRAWING MAP -->
@@ -159,6 +207,16 @@
             //...change the parent elements background image
             document.getElementById("introduction").style.backgroundImage =
               "url(https://images.unsplash.com/photo-1563490390198-b44ccbbc8183?q=80&w=1960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)";
+          }
+          if (isInViewport(document.getElementById("høneffoss"))) {
+            //...change the parent elements background image
+            document.getElementById("introduction").style.backgroundImage =
+              "url(https://mediaorigin.nrk.no/movingstill/835035fc-e3cd-40cc-9035-fce3cd20cc85/20220407173656/835035fc-e3cd-40cc-9035-fce3cd20cc85_720.jpg)";
+          }
+          if (isInViewport(document.getElementById("hiøf"))) {
+            //...change the parent elements background image
+            document.getElementById("introduction").style.backgroundImage =
+              "url(https://www.hiof.no/bilder/bildegalleri/fredrikstad/101-studiestart2019hoyskoleparken.jpg)";
           }
         },
         {
