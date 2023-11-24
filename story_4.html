@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="story_4.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Lorem Ipsum</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Lorem ipsium</h1>
+            <a href="#introduction">Start</a>
+        </div>
+    </header>
+    <section class="scrollContainer" id="introduction">
+        <div class="scrollText">
+            <p>Gegerges er født i Syria familien hans er kristne assyrere, de hadde ikke noe problem før på grunn av at de er kristne, Gerges, 
+            broren og søstra hans hadde ikke noe problem med å dra på skolen eller til kirken med familien. Faren til Gerges jobba som mekaniker i Syria og de hadde et fint liv sammen.
+            </p>
+            <p>Ifølge Aid to the church så er det estimert at kristne i Syria har redusert fra 1,5 millioner til bare 300 tusen fra 2011 til 2022.</p>
+        </div>
+        <div class="scrollText" id="warStart">
+            <p>Alt begynte i 2011 når krigen mellom Assad som er presidenten og motstandsbeveglsen. 
+            Gerges forteller at når denne krigen begynnte så ble det veldi skummelt for kristne i Syria til den grad at det ikke var sikkert å gå til kirken uten å være redd at noen kommer til å 
+            drepe dem bare på grunn av at de er kristne. Han forteller videre at det var sånn spesielt i byen han bodde i som var Rakka kristne var en velig liten minoritet og var et offer for 
+            motstandsbevegelsen. Gerges forteller videre at mormoren og tanten hans flydde landet siden folk begynnte å kidnappe mennesker ikke bare kristne men hvem som helst. 
+            </p>
+        </div>
+        <div class="scrollText" id="terrorBegins">
+            <p>
+                Kort tid etter så begynnte ISIS og komme inn i Syria. Isis begynnte å drepe veldig mange rundt om i landet men sansynligheten at de drepte en kristen var mye større. 
+                Han sier at de ødelagde kirker rundt om i landet, og forteller at han husker at det var noen isis terrorister som var i Rakka og knuste alt som var i kirken. 
+                Han forteller videre at Assad sendt militære til kristne sånn at de kunde dra til kriken sikkert uten å riskere livet sitt men dette var før insidenten der de knuste hele kirken i Rakka. 
+                Han husker at han hadde en venn på skolen som han pleide spille fotball med sa en dag til han mens de spillte fotball at han kommer til å drepe Gerges og hele hans familie så fort isis 
+                armen kommer til Rakka bare fordi de er kristne. Når Gerges hørte dette fikk han sjokk og ble veldig redd at til og med en venn er en trussel mot han bare fordi han er kristen og visste 
+                at han kommer aldri være trygg igjen i Syria.
+            </p>
+        </div>
+        <div class="scrollText" id="bombing">
+            <p>
+                Etter dette så ble det kaos i Rakka Gerges forteller at han begynnte å høre bomber, skyting og artilleri nesten vær dag, og noen ganger til og med mitt på natta. Naboen til Gerges var 
+                også assyrer som hadde to barn og var en alenemor dro til Gerges når bomber ble eksplodert eller når det var skyting. 
+            </p>
+        </div>
+        <div class="scrollText" id="libanon">
+            <p>
+                Etter kort tid etter dette flydde Gerges og hans familie til Libanon, de bodde sammen med tanten hans som allerede bodde der. 
+                De bodde der i noen måneder Gerges forteller han ikke gikk på skole under disse månedene.
+            </p>
+        </div>
+        <div class="scrollText" id="boat">
+            <p>
+                Etter disse månedene så reiste Gerges og hans familie videre til Tyrkia, der tokk de en veldig liten båt med veldig mange personer til Hellas.
+            </p>
+        </div>
+    </section>
+
+
+
+    <script>
+        
+        //Function to check if element is in viewport
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                //Improved check of viewport for elements exceeding viewport height
+                (rect.top <= 0 && rect.bottom >= 0) || 
+                (rect.top >= 0 && rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth))
+            );
+        }
+
+        //Make a check when page scrolls:
+        document.addEventListener('scroll', function () {
+            //If a specific id is in the viewport...
+            if(isInViewport(document.getElementById("warStart"))) {
+                //...change the parent elements background image
+                document.getElementById("introduction").style.backgroundImage = "url(https://images.unsplash.com/photo-1605092262243-28c74cfc74c7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+            }
+            if(isInViewport(document.getElementById("terrorBegins"))) {
+                //...change the parent elements background image
+                document.getElementById("introduction").style.backgroundImage = "url(https://media.thecradle.co/wp-content/uploads/2023/03/191029-isis-flag-ap-773.jpg)"
+            }
+            if(isInViewport(document.getElementById("bombing"))) {
+                //...change the parent elements background image
+                document.getElementById("introduction").style.backgroundImage = "url(https://images.unsplash.com/photo-1575651490568-0683f7f0d48e?q=80&w=1929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+            }
+            if(isInViewport(document.getElementById("libanon"))) {
+                //...change the parent elements background image
+                document.getElementById("introduction").style.backgroundImage = "url(https://images.unsplash.com/photo-1568731225418-9e0b38a1c78c?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+            }
+            if(isInViewport(document.getElementById("boat"))) {
+                //...change the parent elements background image
+                document.getElementById("introduction").style.backgroundImage = "url(https://s3.ap-southeast-2.amazonaws.com/cdn.greekherald.com.au/wp-content/uploads/2022/10/06095828/refugees-scaled.jpg)"
+            }
+        }, {
+            passive: true
+        });
+    </script>
+</body>
+</html>
