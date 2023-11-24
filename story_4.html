@@ -6,11 +6,23 @@
     <link rel="stylesheet" href="story_4.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Lorem Ipsum</title>
+
+    <!--Maps-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- INCLUDE LEAFLET SCRIPT LIBRARY -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!--Maps-->
   </head>
   <body>
     <header>
       <div>
-        <h1>Lorem ipsium</h1>
+        <h1>Gerges Tammo</h1>
         <a href="#introduction">Start</a>
       </div>
     </header>
@@ -91,7 +103,12 @@
         </p>
       </div>
     </section>
-
+    <h2>Reisen til Gerges fra Syria til Norge</h2>
+    <!-- DIV FOR DRAWING MAP -->
+    <main>
+      <nav id="businesses"></nav>
+      <div id="map"></div>
+    </main>
     <script>
       //Function to check if element is in viewport
       function isInViewport(el) {
@@ -148,6 +165,55 @@
           passive: true,
         }
       );
+      /*Maps*/
+
+      //CENTER (Instanbul)
+      const centerLat = 41.0082;
+      const centerLong = 28.9784;
+
+      //DATA: ARRAY OF PLACES
+      const places = [
+        { name: "Syria", lat: 34.55197408386172, long: 37.90258861114157 },
+        { name: "Libanon", lat: 33.866985150141716, long: 35.92157332821003 },
+        { name: "Tyrkia", lat: 39.803128885252136, long: 32.96076694183597 },
+        { name: "Hellas", lat: 38.2749497, long: 23.8102717 },
+        { name: "Norge", lat: 60.63125258503425, long: 8.214258990051547 },
+      ];
+
+      //INITIATE MAP
+      let map = L.map("map", {
+        center: [centerLat, centerLong],
+        zoom: 3,
+      });
+
+      //SET MAP CONSTRUCTOR
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 10,
+        attribution:
+          '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(map);
+      //SET MARKERS AND BUILD NAVIGATION
+      //create custom icon:
+      const remaIcon = L.icon({
+        iconUrl: "location-pin.png",
+        iconSize: [40, 40],
+        iconAnchor: [20, 20],
+        popupAnchor: [0, -20],
+      });
+      //prepare navigation html
+      let navHTML = "";
+      //Loop places
+      places.map((place) => {
+        //place markers
+        L.marker([place.lat, place.long], { icon: remaIcon })
+          .addTo(map)
+          .bindPopup(place.name);
+        //build navigation
+        navHTML += `<article><h3>${place.name}</h3><button onclick="map.flyTo([${place.lat},${place.long}],9)">Vis på kart</button></article>`;
+      });
+      //Add HTML to nav
+      document.getElementById("businesses").innerHTML = navHTML;
+      /*Maps*/
     </script>
   </body>
 </html>
