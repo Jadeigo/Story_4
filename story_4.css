@@ -58,11 +58,11 @@ header a {
 }
 
 #fakta {
-    background-image: url("https://syriadirect.org/wp-content/uploads/2023/03/St.-Marys-Church-in-Tal-Nasri-an-Assyrian-village-in-Syrias-northeastern-Hasakah-province-destroyed-by-Islamic-State-IS-fighters-in-2015-222023-Lyse-MauvaisSyria-Direct.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  background-image: url("https://syriadirect.org/wp-content/uploads/2023/03/St.-Marys-Church-in-Tal-Nasri-an-Assyrian-village-in-Syrias-northeastern-Hasakah-province-destroyed-by-Islamic-State-IS-fighters-in-2015-222023-Lyse-MauvaisSyria-Direct.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .textSection {
   max-width: 50rem;
@@ -96,33 +96,33 @@ h2 {
 /*Maps*/
 
 .alignRight {
-    float: right;
-    margin: 0 0 1rem 1rem;
+  float: right;
+  margin: 0 0 1rem 1rem;
 }
 .circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    padding-top: 50px;
-    box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 .redBg {
-    background: #b61010;
-    color: #fff;
+  background: #b61010;
+  color: #fff;
 }
 .greenBg {
-    background: #588002;
-    color: #fff;
+  background: #588002;
+  color: #fff;
 }
 .big {
-    text-align: center;
-    font-size: 4rem;
-    display: block;
-    clear: both;
+  text-align: center;
+  font-size: 4rem;
+  display: block;
+  clear: both;
 }
 .small {
-    text-align: center;
-    font-size: 2rem;
-    margin: 0 auto;
-    display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto;
+  display: block;
 }
